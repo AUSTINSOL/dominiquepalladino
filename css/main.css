@@ -1,0 +1,73 @@
+
+* { margin:0; padding:0; }
+body { background:#ffffff; height:100%;min-width: 480px; color:#ffffff;}
+	img { border:none; }
+	a:link {
+    color: #FFFFFF;text-decoration: none;
+    font-family: 'Gudea', sans-serif;
+	}
+	
+	a:visited {
+    color: #FFFFFF;text-decoration: none;
+    font-family: 'Gudea', sans-serif;
+	}
+
+	#supersized-loader { position: fixed;
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100px;
+   height: 34px;
+   margin-top: -17px; /* Half the height */
+   margin-left: -50px; /* Half the width */ z-index:0;   text-indent:-999em; color: white; background:url(../img/progress.gif) no-repeat center center;}
+	
+	#supersized {  display:block; position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
+		#supersized img { width:auto; height:auto; position:relative; display:none; outline:none; border:none; }
+			#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+			#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+		
+		#supersized li { display:block; list-style:none; z-index:-30; position:fixed; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111; }
+		#supersized a { width:100%; height:100%; display:block; }
+			#supersized li.prevslide { z-index:-20; }
+			#supersized li.activeslide { z-index:-10; }
+			#supersized li.image-loading { background:#ffffff url(../img/progress.gif) no-repeat center center; width:100%; height:100%; }
+				#supersized li.image-loading img{ visibility:hidden; }
+			#supersized li.prevslide img, #supersized li.activeslide img{ display:inline; }
+			
+			ul#title{ margin:0 15px 0 15px; }
+			ul#title li { margin:0 0 0 0; padding:0px; display:inline; float:left; clear:both; font-size:40px; }
+			ul#title li a{ font:8px;  text-decoration: none;}
+			a:hover {color: black;}
+			
+			ul#links{ margin:0 15px 15px 15px; }
+			ul#links li { margin:0 0 0 0; display:inline; float:left; clear:both; font-weight:thin; font-size:16px;}
+			ul#links li a{ font:8px; font-weight:normal; text-decoration: none;}
+			 
+			 #center { margin:0 15px 0 15px; padding:10px; padding-top:30px;  display:inline; float:left; clear:both; color:#252525;font-weight:100; font:12px "Trebuchet MS", Arial, Sans-Serif;}
+			 #about {margin:0 15px 15px 25px; max-width: 480px;min-width: 480px;  padding:10px; float:left; clear:both; color:#ff0000;font-weight:100; font:15px 'Raleway';}
+			 
+			 video#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(polina.jpg) no-repeat;
+background-size: cover;
+}
+
+
+
+
+#contact {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -10px;
+  text-align: center;
+  color:#ffffff; font-size:24px;text-decoration: none}
+			/* potential fonts
+			font-family: 'Lato', 
+			font-family: 'Josefin Sans'
+			font-family: 'Source Code Pro'
+			font-family: 'Inconsolata'
+			font-family: 'Raleway' 
+			font-family: 'Jura'*/
